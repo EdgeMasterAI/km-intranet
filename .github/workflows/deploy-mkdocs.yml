@@ -1,4 +1,3 @@
-# .github/workflows/deploy-mkdocs.yml
 name: Deploy MkDocs to GitHub Pages
 on:
   push:
