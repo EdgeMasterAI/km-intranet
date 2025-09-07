@@ -1,0 +1,47 @@
+site_name: EML Intranet (KM)
+site_description: Lean Knowledge Management backbone
+site_url: https://example.com  # replace or remove if serving locally
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.sections
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+  palette:
+    - scheme: default
+      primary: blue
+      accent: indigo
+nav:
+  - Home: index.md
+  - Knowledge Repository:
+      - Overview: knowledge-repository/index.md
+      - Policies & Procedures: knowledge-repository/policies.md
+      - Technical Manuals: knowledge-repository/technical-manuals.md
+      - Playbooks & Guides: knowledge-repository/playbooks.md
+      - Templates & Forms: knowledge-repository/templates.md
+  - Projects & Workspaces:
+      - Overview: projects/index.md
+      - Active Projects: projects/active.md
+      - Archived Projects: projects/archived.md
+  - Operations & Workflows:
+      - Overview: operations/index.md
+      - SOPs: operations/sops.md
+      - Tools & Integrations: operations/tools.md
+      - KPIs & Metrics: operations/kpis.md
+  - Search & Tagging: search-tagging/index.md
+markdown_extensions:
+  - admonition
+  - footnotes
+  - tables
+  - toc:
+      permalink: true
+  - attr_list
+extra_css:
+  - assets/overrides.css
+extra_javascript:
+  - assets/links.js
+plugins:
+  - search
